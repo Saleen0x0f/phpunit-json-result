@@ -1,0 +1,29 @@
+{
+    "name": "saleen/phpunit-json-result",
+    "description": "Print your PHPUnit result in JSON",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "phpunit/phpunit": "^10.5|^11.0"
+    },
+    "require-dev": {
+        "tracy/tracy": "^2.10",
+        "rector/rector": "^1.2",
+        "symplify/easy-coding-standard": "^12.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Saleen\\PHPUnitJsonResult\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Saleen\\PHPUnitJsonResult\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "check-cs": "vendor/bin/ecs check --ansi",
+        "fix-cs": "vendor/bin/ecs check --fix --ansi",
+        "phpstan": "vendor/bin/phpstan"
+    }
+}
