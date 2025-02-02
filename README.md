@@ -1,13 +1,13 @@
 # PHPUnit Json Result 
 
-Other PHP CLI tool can communicate with API using JSON. Why not PHPUnit?
+The tools can communicate with API using JSON.
 
 This package requires PHPUnit 10+ and PHP 8.2+.
 
 ## Install
 
 ```bash
-composer require --dev sallen/phpunit-json-result
+composer require --dev saleen0x0f/phpunit-json-result
 ```
 
 ## Usage
