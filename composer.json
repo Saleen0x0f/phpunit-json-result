@@ -1,21 +1,21 @@
 {
     "name": "saleen/phpunit-json-result",
-    "description": "Print your PHPUnit result in JSON",
-    "license": "MIT",
+    "description": "Print your PHPUnit results in JSON file",
     "require": {
         "php": "^8.2",
-        "phpunit/phpunit": "^10.5|^11.0"
+        "phpunit/phpunit": "^10.5"
     },
-    "require-dev": {
-    },
+    "license": "MIT",
     "autoload": {
         "psr-4": {
-            "PHPUnitJsonResult\\": "src"
+            "Saleen\\PhpunitJsonResult\\": "src/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "PHPUnitJsonResult\\Test\\": "tests"
+    "authors": [
+        {
+            "name": "Maxim Igonkin",
+            "email": "maximigonkin@gmail.com"
         }
-    }
+    ],
+    "minimum-stability": "dev"
 }
