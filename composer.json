@@ -10,12 +10,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Saleen\\PHPUnitJsonResult\\": "src"
+            "PHPUnitJsonResult\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Saleen\\PHPUnitJsonResult\\Test\\": "tests"
+            "PHPUnitJsonResult\\Test\\": "tests"
         }
     }
 }
