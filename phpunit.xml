@@ -12,6 +12,6 @@
     </testsuites>
 
     <extensions>
-        <bootstrap class="PHPUnitJsonResult\PHPUnitJsonResultExtension" />
+        <bootstrap class="Saleen\PHPUnitJsonResult\PHPUnitJsonResultExtension" />
     </extensions>
 </phpunit>

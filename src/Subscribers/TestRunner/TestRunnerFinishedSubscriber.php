@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Sallen\PHPUnitJsonResult\Subscribers\TestRunner;
+namespace Saleen\PHPUnitJsonResult\Subscribers\TestRunner;
 
 use PHPUnit\Event\Code\TestMethod;
 use PHPUnit\Event\Test\Failed;
