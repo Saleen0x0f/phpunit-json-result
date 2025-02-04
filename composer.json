@@ -8,7 +8,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Saleen\\PhpunitJsonResult\\": "src/"
+            "Saleen\\PHPUnitJsonResult\\": "src"
         }
     },
     "authors": [
