@@ -14,9 +14,7 @@ use PHPUnit\TestRunner\TestResult\TestResult;
 
 final class TestRunnerFinishedSubscriber implements FinishedSubscriber
 {
-    public function __construct(
-    ) {
-
+    public function __construct() {
     }
 
     public function notify(Finished $event): void
@@ -39,14 +37,30 @@ final class TestRunnerFinishedSubscriber implements FinishedSubscriber
         ];
 
         $resultJsonData['failed'] = $this->createFailedEventDatas($testResult);
-
         $resultJson = json_encode($resultJsonData, JSON_PRETTY_PRINT | JSON_THROW_ON_ERROR);
-        // var_dump(__DIR__);
-        $dir = "/mnt/c/Users/Maxim/docs/tester/tests/data.json";
-        $file = fopen($dir,'w+');
+        $this->reportToFile($resultJson);
+        
+    }
+
+    private function reportToFile(string $resultJson): string
+    {
+        $dir = "/mnt/c/Users/Maxim/docs/tester/tests/";
+        $file = "php-json.json";
+
+        if (!is_dir($dir)) {
+            mkdir($dir, 0777, true);
+        }
+
+        if (!file_exists($dir . 'php-json.json')) {
+            touch($dir . $file);
+        }
+
+        $file = fopen($dir . $file,'w+');
         fwrite($file, $resultJson);
         fclose($file);
-    }
+
+        return "OK";
+    }    
 
     /**
      * @return array<string, mixed>
